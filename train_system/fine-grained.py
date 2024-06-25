@@ -1,6 +1,7 @@
-#Test script for the fine-grained train-ticketing microservice system
+# Test script for the fine-grained train-ticketing microservice system
 from locust import HttpUser, TaskSet, task, between, constant_pacing
 import random
+
 
 # class StationServiceTask(TaskSet):
 #     @task
@@ -207,91 +208,108 @@ import random
 
 class CancelServiceTask(TaskSet):
 
-        @task
-        def get_request(self):
-            self.client.get("/api/v1/cancelservice/welcome")
+    @task
+    def get_request(self):
+        self.client.get("/api/v1/cancelservice/welcome")
+
 
 class ExeServiceTask(TaskSet):
 
-        @task
-        def get_request(self):
-            self.client.get("/api/v1/executeservice/welcome")
+    @task
+    def get_request(self):
+        self.client.get("/api/v1/executeservice/welcome")
+
 
 class FoodDeliverServiceTask(TaskSet):
 
-            @task
-            def get_request(self):
-                self.client.get("/api/v1/fooddeliveryservice/orders/all")
+    @task
+    def get_request(self):
+        self.client.get("/api/v1/fooddeliveryservice/orders/all")
+
 
 class FoodServiceTask(TaskSet):
 
-            @task
-            def get_request(self):
-                self.client.get("/api/v1/foodservice/orders")
+    @task
+    def get_request(self):
+        self.client.get("/api/v1/foodservice/orders")
+
 
 class InsidePaymentServiceTask(TaskSet):
 
-            @task
-            def get_request(self):
-                self.client.get("/api/v1/inside_pay_service/inside_payment/account")
+    @task
+    def get_request(self):
+        self.client.get("/api/v1/inside_pay_service/inside_payment/account")
+
 
 class OrderOther2ServiceTask(TaskSet):
 
-            @task
-            def get_request(self):
-                travelDate = "2013-08-09"
-                trainNumber = "1"
-                self.client.get(f"/api/v1/orderOtherService02/orderOther/{travelDate}/{trainNumber}")
+    @task
+    def get_request(self):
+        travelDate = "2013-08-09"
+        trainNumber = "1"
+        self.client.get(f"/api/v1/orderOtherService02/orderOther/{travelDate}/{trainNumber}")
+
+
 class PaymentServiceTask(TaskSet):
 
-            @task
-            def get_request(self):
-                self.client.get("/api/v1/paymentservice/payment")
+    @task
+    def get_request(self):
+        self.client.get("/api/v1/paymentservice/payment")
+
 
 class PreserveServiceTask(TaskSet):
 
-            @task
-            def get_request(self):
-                self.client.get("/api/v1/preserveservice/welcome")
+    @task
+    def get_request(self):
+        self.client.get("/api/v1/preserveservice/welcome")
+
 
 class RebookServiceTask(TaskSet):
 
-            @task
-            def get_request(self):
-                self.client.get("/api/v1/rebookservice/welcome")
+    @task
+    def get_request(self):
+        self.client.get("/api/v1/rebookservice/welcome")
+
+
 class waitorderServiceTask(TaskSet):
 
-            @task
-            def get_request(self):
-                self.client.get("/api/v1/waitorderservice/orders")
+    @task
+    def get_request(self):
+        self.client.get("/api/v1/waitorderservice/orders")
+
 
 class TravelPlanServiceTask(TaskSet):
 
-            @task
-            def post_request(self):
-                data = {
-                         "departureTime": "2013-08-12",
-                         "endPlace": "shanghai",
-                         "startPlace": "nanjing"
-                       }
-                self.client.post("/api/v1/travelplanservice/travelPlan/cheapest", json=data)
+    @task
+    def post_request(self):
+        data = {
+            "departureTime": "2013-08-12",
+            "endPlace": "shanghai",
+            "startPlace": "nanjing"
+        }
+        self.client.post("/api/v1/travelplanservice/travelPlan/cheapest", json=data)
+
+
 class RoutePlanServiceTask(TaskSet):
 
-            @task
-            def post_request(self):
-                data = {
-                         "endStation": "shanghai",
-                         "num": 0,
-                         "startStation": "nanjing",
-                         "travelDate": "2013-08-01"
-                       }
-                self.client.post("/api/v1/routeplanservice/routePlan/cheapestRoute", json=data)
+    @task
+    def post_request(self):
+        data = {
+            "endStation": "shanghai",
+            "num": 0,
+            "startStation": "nanjing",
+            "travelDate": "2013-08-01"
+        }
+        self.client.post("/api/v1/routeplanservice/routePlan/cheapestRoute", json=data)
+
 
 class PreserveOtherServiceTask(TaskSet):
 
-                @task
-                def get_request(self):
-                    self.client.get("/api/v1/preserveotherservice/welcome")
+    @task
+    def get_request(self):
+        self.client.get("/api/v1/preserveotherservice/welcome")
+
+
 # # Station Service Test
 # class StationService(HttpUser):
 #     tasks = [StationServiceTask]
@@ -466,11 +484,13 @@ class CancelService(HttpUser):
     wait_time = constant_pacing(1)
     host = "http://localhost:18885"
 
+
 # Execute Service Test
 class ExecuteService(HttpUser):
     tasks = [ExeServiceTask]
     wait_time = constant_pacing(1)
     host = "http://localhost:12386"
+
 
 # Food Deliver Service Test
 class FoodDeliverService(HttpUser):
@@ -478,61 +498,71 @@ class FoodDeliverService(HttpUser):
     wait_time = constant_pacing(1)
     host = "http://localhost:18957"
 
+
 # Food Service Test
 class FoodService(HttpUser):
     tasks = [FoodServiceTask]
     wait_time = constant_pacing(1)
     host = "http://localhost:18856"
 
-#InsidePaymentServiceTask Service Test
+
+# InsidePaymentServiceTask Service Test
 class InsidePaymentService(HttpUser):
     tasks = [InsidePaymentServiceTask]
     wait_time = constant_pacing(1)
     host = "http://localhost:18673"
 
-#OrderOther2ServiceTask Service Test
+
+# OrderOther2ServiceTask Service Test
 class OrderOther2Service(HttpUser):
     tasks = [OrderOther2ServiceTask]
     wait_time = constant_pacing(1)
     host = "http://localhost:12034"
 
-#paymentservice Service Test
+
+# paymentservice Service Test
 class PaymentService(HttpUser):
     tasks = [PaymentServiceTask]
     wait_time = constant_pacing(1)
     host = "http://localhost:19001"
 
-#PreserveServiceTask Service Test
+
+# PreserveServiceTask Service Test
 class PreserveService(HttpUser):
     tasks = [PreserveServiceTask]
     wait_time = constant_pacing(1)
     host = "http://localhost:14568"
 
-#rebool Service Test
+
+# rebool Service Test
 class RebookService(HttpUser):
     tasks = [RebookServiceTask]
     wait_time = constant_pacing(1)
     host = "http://localhost:18886"
 
-#waitorderservice Service Test
+
+# waitorderservice Service Test
 class WaitOrderService(HttpUser):
     tasks = [waitorderServiceTask]
     wait_time = constant_pacing(1)
     host = "http://localhost:17525"
 
-#Travel plan Service Test
+
+# Travel plan Service Test
 class TravelPlanService(HttpUser):
     tasks = [TravelPlanServiceTask]
     wait_time = constant_pacing(1)
     host = "http://localhost:14322"
 
-#RoutePlanServiceTask Service Test
+
+# RoutePlanServiceTask Service Test
 class RoutePlanService(HttpUser):
     tasks = [RoutePlanServiceTask]
     wait_time = constant_pacing(1)
     host = "http://localhost:14578"
 
-#PreserveOtherServiceTask
+
+# PreserveOtherServiceTask
 class PreserveOtherService(HttpUser):
     tasks = [PreserveOtherServiceTask]
     wait_time = constant_pacing(1)
