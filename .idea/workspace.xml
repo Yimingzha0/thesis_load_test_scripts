@@ -4,7 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="8503dfe4-d44d-44ed-a82c-1c71f4ec2b7a" name="Changes" comment="add the coarse script for the train system, add the log wash script" />
+    <list default="true" id="8503dfe4-d44d-44ed-a82c-1c71f4ec2b7a" name="Changes" comment="add medium">
+      <change beforePath="$PROJECT_DIR$/train_system/fine-grained.py" beforeDir="false" afterPath="$PROJECT_DIR$/train_system/fine-grained.py" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -28,19 +30,19 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "git-widget-placeholder": "main",
-    "last_opened_file_path": "/Users/zhaoyiming/Documents/Thesis/Project/thesis_load_test_scripts",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/Users/zhaoyiming/Documents/Thesis/Project/thesis_load_test_scripts&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/data_process" />
@@ -79,6 +81,7 @@
       <option name="presentableId" value="Default" />
       <updated>1719339782112</updated>
       <workItem from="1719339783375" duration="1206000" />
+      <workItem from="1719341031597" duration="1299000" />
     </task>
     <task id="LOCAL-00001" summary="add the coarse script for the train system, add the log wash script">
       <option name="closed" value="true" />
@@ -88,7 +91,31 @@
       <option name="project" value="LOCAL" />
       <updated>1719340754570</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="add the coarse script for the train system, add the log wash script">
+      <option name="closed" value="true" />
+      <created>1719341058061</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1719341058061</updated>
+    </task>
+    <task id="LOCAL-00003" summary="add new scripts">
+      <option name="closed" value="true" />
+      <created>1719341668468</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1719341668468</updated>
+    </task>
+    <task id="LOCAL-00004" summary="add medium">
+      <option name="closed" value="true" />
+      <created>1719341776758</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1719341776758</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -119,6 +146,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="add the coarse script for the train system, add the log wash script" />
-    <option name="LAST_COMMIT_MESSAGE" value="add the coarse script for the train system, add the log wash script" />
+    <MESSAGE value="add new scripts" />
+    <MESSAGE value="add medium" />
+    <option name="LAST_COMMIT_MESSAGE" value="add medium" />
   </component>
 </project>
