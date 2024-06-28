@@ -4,7 +4,7 @@
 import csv
 import re
 
-log_filename = '../train_system/results/locust_requests_20240625203409.log'
+log_filename = '../train_system/locustfile.log'
 csv_filename = '../train_system/results/locust_requests.csv'
 
 log_pattern = re.compile(

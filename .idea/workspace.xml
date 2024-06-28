@@ -4,8 +4,20 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="8503dfe4-d44d-44ed-a82c-1c71f4ec2b7a" name="Changes" comment="add medium">
-      <change beforePath="$PROJECT_DIR$/train_system/fine-grained.py" beforeDir="false" afterPath="$PROJECT_DIR$/train_system/fine-grained.py" afterDir="false" />
+    <list default="true" id="8503dfe4-d44d-44ed-a82c-1c71f4ec2b7a" name="Changes" comment="modify">
+      <change afterPath="$PROJECT_DIR$/data_process/DataProcess.ipynb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/train_system/auto.sh" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/train_system/coarse_script/burst_high.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/train_system/coarse_script/burst_low.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/train_system/coarse_script/burst_med.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/train_system/coarse_script/even_high.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/train_system/coarse_script/even_low.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/train_system/coarse_script/even_med.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/train_system/coarse_test.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data_process/log_wash.py" beforeDir="false" afterPath="$PROJECT_DIR$/data_process/log_wash.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/train_system/results/locust_requests.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/train_system/results/locust_requests_20240625203409.log" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -15,6 +27,7 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
+        <option value="Jupyter Notebook" />
         <option value="Python Script" />
       </list>
     </option>
@@ -81,7 +94,9 @@
       <option name="presentableId" value="Default" />
       <updated>1719339782112</updated>
       <workItem from="1719339783375" duration="1206000" />
-      <workItem from="1719341031597" duration="1299000" />
+      <workItem from="1719341031597" duration="1967000" />
+      <workItem from="1719386296116" duration="20786000" />
+      <workItem from="1719422732019" duration="38402000" />
     </task>
     <task id="LOCAL-00001" summary="add the coarse script for the train system, add the log wash script">
       <option name="closed" value="true" />
@@ -115,7 +130,23 @@
       <option name="project" value="LOCAL" />
       <updated>1719341776758</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="add fine">
+      <option name="closed" value="true" />
+      <created>1719342341784</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1719342341784</updated>
+    </task>
+    <task id="LOCAL-00006" summary="modify">
+      <option name="closed" value="true" />
+      <created>1719342713579</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1719342713579</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -148,6 +179,8 @@
     <MESSAGE value="add the coarse script for the train system, add the log wash script" />
     <MESSAGE value="add new scripts" />
     <MESSAGE value="add medium" />
-    <option name="LAST_COMMIT_MESSAGE" value="add medium" />
+    <MESSAGE value="add fine" />
+    <MESSAGE value="modify" />
+    <option name="LAST_COMMIT_MESSAGE" value="modify" />
   </component>
 </project>
