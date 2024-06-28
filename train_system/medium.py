@@ -49,11 +49,11 @@ class AdminBasicInfoServiceTask(TaskSet):
                 def get_request(self):
                     self.client.get("/api/v1/adminbasicservice/adminbasic/contacts")
 
-class AdminBasicInfoServiceTask2(TaskSet):
-
-                @task
-                def get_request(self):
-                    self.client.get("/api/v1/adminbasicservice/adminbasic/stations")
+# class AdminBasicInfoServiceTask2(TaskSet):
+#
+#                 @task
+#                 def get_request(self):
+#                     self.client.get("/api/v1/adminbasicservice/adminbasic/stations")
 
 class AdminBasicInfoServiceTask3(TaskSet):
 
@@ -334,11 +334,11 @@ class AdminBasicInfoService(HttpUser):
     wait_time = constant_pacing(1)
     host = "http://localhost:18767"
 
-# Admin Basic Info Service Test2
-class AdminBasicInfoService2(HttpUser):
-    tasks = [AdminBasicInfoServiceTask2]
-    wait_time = constant_pacing(1)
-    host = "http://localhost:18767"
+# # Admin Basic Info Service Test2
+# class AdminBasicInfoService2(HttpUser):
+#     tasks = [AdminBasicInfoServiceTask2]
+#     wait_time = constant_pacing(1)
+#     host = "http://localhost:18767"
 
 # Admin Basic Info Service Test3
 class AdminBasicInfoService3(HttpUser):

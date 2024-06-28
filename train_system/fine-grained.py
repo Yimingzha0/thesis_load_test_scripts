@@ -310,173 +310,178 @@ class PreserveOtherServiceTask(TaskSet):
         self.client.get("/api/v1/preserveotherservice/welcome")
 
 
-# # Station Service Test
-# class StationService(HttpUser):
-#     tasks = [StationServiceTask]
-#     wait_time = constant_pacing(1)
-#     host = "http://localhost:12345"
-#
-# # Price Service Test
-# class PriceService(HttpUser):
-#     tasks = [PriceServiceTask]
-#     wait_time = constant_pacing(1)
-#     host = "http://localhost:16579"
-#
-# # Train Food Service Test
-# class TrainFoodService(HttpUser):
-#     tasks = [TrainFoodServiceTask]
-#     wait_time = constant_pacing(1)
-#     host = "http://localhost:19999"
-#
-# #  Train Service Test
-# class TrainService(HttpUser):
-#     tasks = [TrainServiceTask]
-#     wait_time = constant_pacing(1)
-#     host = "http://localhost:14567"
-#
-# # Route Service Test
-# class RouteService(HttpUser):
-#     tasks = [RouteServiceTask]
-#     wait_time = constant_pacing(1)
-#     host = "http://localhost:11178"
-#
-# # Contacts Service Test
-# class ContactsService(HttpUser):
-#     tasks = [ContactsServiceTask]
-#     wait_time = constant_pacing(1)
-#     host = "http://localhost:12347"
-#
-# # Admin Basic Info Service Test
-# class AdminBasicInfoService(HttpUser):
-#     tasks = [AdminBasicInfoServiceTask]
-#     wait_time = constant_pacing(1)
-#     host = "http://localhost:18767"
-#
-# # Admin Basic Info Service Test2
+# Station Service Test
+class StationService(HttpUser):
+    tasks = [StationServiceTask]
+    wait_time = constant_pacing(1)
+    host = "http://localhost:12345"
+
+# Price Service Test
+class PriceService(HttpUser):
+    tasks = [PriceServiceTask]
+    wait_time = constant_pacing(1)
+    host = "http://localhost:16579"
+
+# Train Food Service Test
+class TrainFoodService(HttpUser):
+    tasks = [TrainFoodServiceTask]
+    wait_time = constant_pacing(1)
+    host = "http://localhost:19999"
+
+#  Train Service Test
+class TrainService(HttpUser):
+    tasks = [TrainServiceTask]
+    wait_time = constant_pacing(1)
+    host = "http://localhost:14567"
+
+# Route Service Test
+class RouteService(HttpUser):
+    tasks = [RouteServiceTask]
+    wait_time = constant_pacing(1)
+    host = "http://localhost:11178"
+
+# Contacts Service Test
+class ContactsService(HttpUser):
+    tasks = [ContactsServiceTask]
+    wait_time = constant_pacing(1)
+    host = "http://localhost:12347"
+
+# Admin Basic Info Service Test
+class AdminBasicInfoService(HttpUser):
+    tasks = [AdminBasicInfoServiceTask]
+    wait_time = constant_pacing(1)
+    host = "http://localhost:18767"
+
+# Admin Basic Info Service Test2
 # class AdminBasicInfoService2(HttpUser):
 #     tasks = [AdminBasicInfoServiceTask2]
 #     wait_time = constant_pacing(1)
 #     host = "http://localhost:18768"
-#
-# # Admin Basic Info Service Test3
-# class AdminBasicInfoService3(HttpUser):
-#     tasks = [AdminBasicInfoServiceTask3]
-#     wait_time = constant_pacing(1)
-#     host = "http://localhost:18769"
-#
-# # Admin Order Service Test
-# class AdminOrderService(HttpUser):
-#     tasks = [AdminOrderServiceTask]
-#     wait_time = constant_pacing(1)
-#     host = "http://localhost:16112"
-#
-# # Basic Service Test
-# class BasicService(HttpUser):
-#     tasks = [BasicServiceTask]
-#     wait_time = constant_pacing(1)
-#     host = "http://localhost:15680"
-#
-# # Order Service Test
-# class OrderService(HttpUser):
-#     tasks = [OrderServiceTask]
-#     wait_time = constant_pacing(1)
-#     host = "http://localhost:12031"
-#
-# # Order Service Test2
-# class OrderService2(HttpUser):
-#     tasks = [OrderService2Task]
-#     wait_time = constant_pacing(1)
-#     host = "http://localhost:12033"
-#
-# # Order Other Service Test
-# class OrderOtherService(HttpUser):
-#     tasks = [OrderOtherServiceTask]
-#     wait_time = constant_pacing(1)
-#     host = "http://localhost:12032"
-#
-# # Route Service Test
-# class RouteService(HttpUser):
-#     tasks = [RouteServiceTask]
-#     wait_time = constant_pacing(1)
-#     host = "http://localhost:18898"
-#
-# # Station Food Service Test
-# class StationFoodService(HttpUser):
-#     tasks = [StationFoodServiceTask]
-#     wait_time = constant_pacing(1)
-#     host = "http://localhost:18855"
-#
-# # Travel2 Service Test
-# class Travel2Service(HttpUser):
-#     tasks = [Travel2ServiceTask]
-#     wait_time = constant_pacing(1)
-#     host = "http://localhost:16346"
-#
-# # User Service Test
-# class UserService(HttpUser):
-#     tasks = [UserServiceTask]
-#     wait_time = constant_pacing(1)
-#     host = "http://localhost:12342"
-#
-# #Admin Travel Service Test
-# class AdminTravelService(HttpUser):
-#     tasks = [AdminTravelServiceTask]
-#     wait_time = constant_pacing(1)
-#     host = "http://localhost:16114"
-#
-# # Admin Route Service Test
-# class AdminRouteService(HttpUser):
-#     tasks = [AdminRouteServiceTask]
-#     wait_time = constant_pacing(1)
-#     host = "http://localhost:16113"
-#
-# # Admin User Service Test
-# class AdminUserService(HttpUser):
-#     tasks = [AdminUserServiceTask]
-#     wait_time = constant_pacing(1)
-#     host = "http://localhost:16115"
-#
-# # Assurance Service Test
-# class AssuranceService(HttpUser):
-#     tasks = [AssuranceServiceTask]
-#     wait_time = constant_pacing(1)
-#     host = "http://localhost:18888"
-#
-# # Config Service Test
-# class ConfigService(HttpUser):
-#     tasks = [ConfigServiceTask]
-#     wait_time = constant_pacing(1)
-#     host = "http://localhost:15679"
-#
-# # Consign Price Service Test
-# class ConsignPriceService(HttpUser):
-#     tasks = [ConsignPriceServiceTask]
-#     wait_time = constant_pacing(1)
-#     host = "http://localhost:16110"
-#
-# # Consign Service Test
-# class ConsignService(HttpUser):
-#     tasks = [ConsignServiceTask]
-#     wait_time = constant_pacing(1)
-#     host = "http://localhost:16111"
-#
-# # Notification Service Test
-# class NotificationService(HttpUser):
-#     tasks = [NotificationServiceTask]
-#     wait_time = constant_pacing(1)
-#     host = "http://localhost:17853"
-#
-# # Security Service Test
-# class SecurityService(HttpUser):
-#     tasks = [SecurityServiceTask]
-#     wait_time = constant_pacing(1)
-#     host = "http://localhost:11188"
-#
-# # Travel Service Test
-# class TravelService(HttpUser):
-#     tasks = [TravelServiceTask]
-#     wait_time = constant_pacing(1)
-#     host = "http://localhost:12346"
+
+# Admin Basic Info Service Test3
+class AdminBasicInfoService3(HttpUser):
+    tasks = [AdminBasicInfoServiceTask3]
+    wait_time = constant_pacing(1)
+    host = "http://localhost:18769"
+
+# Admin Order Service Test
+class AdminOrderService(HttpUser):
+    tasks = [AdminOrderServiceTask]
+    wait_time = constant_pacing(1)
+    host = "http://localhost:16112"
+
+# Basic Service Test
+class BasicService(HttpUser):
+    tasks = [BasicServiceTask]
+    wait_time = constant_pacing(1)
+    host = "http://localhost:15680"
+
+# Order Service Test
+class OrderService(HttpUser):
+    tasks = [OrderServiceTask]
+    wait_time = constant_pacing(1)
+    host = "http://localhost:12031"
+
+# Order Service Test2
+class OrderService2(HttpUser):
+    tasks = [OrderService2Task]
+    wait_time = constant_pacing(1)
+    host = "http://localhost:12033"
+
+# Order Other Service Test
+class OrderOtherService(HttpUser):
+    tasks = [OrderOtherServiceTask]
+    wait_time = constant_pacing(1)
+    host = "http://localhost:12032"
+
+# Route Service Test
+class RouteService(HttpUser):
+    tasks = [RouteServiceTask]
+    wait_time = constant_pacing(1)
+    host = "http://localhost:18898"
+
+# Station Food Service Test
+class StationFoodService(HttpUser):
+    tasks = [StationFoodServiceTask]
+    wait_time = constant_pacing(1)
+    host = "http://localhost:18855"
+
+# Travel2 Service Test
+class Travel2Service(HttpUser):
+    tasks = [Travel2ServiceTask]
+    wait_time = constant_pacing(1)
+    host = "http://localhost:16346"
+
+# User Service Test
+class UserService(HttpUser):
+    tasks = [UserServiceTask]
+    wait_time = constant_pacing(1)
+    host = "http://localhost:12342"
+
+#Admin Travel Service Test
+class AdminTravelService(HttpUser):
+    tasks = [AdminTravelServiceTask]
+    wait_time = constant_pacing(1)
+    host = "http://localhost:16114"
+
+class AdminTravelService2(HttpUser):
+    tasks = [AdminTravelServiceTask2]
+    wait_time = constant_pacing(1)
+    host = "http://localhost:16114"
+
+# Admin Route Service Test
+class AdminRouteService(HttpUser):
+    tasks = [AdminRouteServiceTask]
+    wait_time = constant_pacing(1)
+    host = "http://localhost:16113"
+
+# Admin User Service Test
+class AdminUserService(HttpUser):
+    tasks = [AdminUserServiceTask]
+    wait_time = constant_pacing(1)
+    host = "http://localhost:16115"
+
+# Assurance Service Test
+class AssuranceService(HttpUser):
+    tasks = [AssuranceServiceTask]
+    wait_time = constant_pacing(1)
+    host = "http://localhost:18888"
+
+# Config Service Test
+class ConfigService(HttpUser):
+    tasks = [ConfigServiceTask]
+    wait_time = constant_pacing(1)
+    host = "http://localhost:15679"
+
+# Consign Price Service Test
+class ConsignPriceService(HttpUser):
+    tasks = [ConsignPriceServiceTask]
+    wait_time = constant_pacing(1)
+    host = "http://localhost:16110"
+
+# Consign Service Test
+class ConsignService(HttpUser):
+    tasks = [ConsignServiceTask]
+    wait_time = constant_pacing(1)
+    host = "http://localhost:16111"
+
+# Notification Service Test
+class NotificationService(HttpUser):
+    tasks = [NotificationServiceTask]
+    wait_time = constant_pacing(1)
+    host = "http://localhost:17853"
+
+# Security Service Test
+class SecurityService(HttpUser):
+    tasks = [SecurityServiceTask]
+    wait_time = constant_pacing(1)
+    host = "http://localhost:11188"
+
+# Travel Service Test
+class TravelService(HttpUser):
+    tasks = [TravelServiceTask]
+    wait_time = constant_pacing(1)
+    host = "http://localhost:12346"
 
 # Cancel Service Test
 class CancelService(HttpUser):

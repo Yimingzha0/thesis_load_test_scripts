@@ -4,20 +4,24 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="8503dfe4-d44d-44ed-a82c-1c71f4ec2b7a" name="Changes" comment="modify">
-      <change afterPath="$PROJECT_DIR$/data_process/DataProcess.ipynb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/train_system/auto.sh" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/train_system/coarse_script/burst_high.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/train_system/coarse_script/burst_low.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/train_system/coarse_script/burst_med.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/train_system/coarse_script/even_high.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/train_system/coarse_script/even_low.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/train_system/coarse_script/even_med.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/train_system/coarse_test.py" afterDir="false" />
+    <list default="true" id="8503dfe4-d44d-44ed-a82c-1c71f4ec2b7a" name="Changes" comment="the script for coarse grained system load testing">
+      <change afterPath="$PROJECT_DIR$/train_system/auto_low.sh" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/train_system/auto_med.sh" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/train_system/fine_script/burst_high.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/train_system/fine_script/burst_low.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/train_system/fine_script/burst_med.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/train_system/fine_script/even_high.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/train_system/fine_script/even_low.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/train_system/fine_script/even_med.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/train_system/medium_script/burst_high.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/train_system/medium_script/burst_low.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/train_system/medium_script/burst_med.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/train_system/medium_script/even_high.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/train_system/medium_script/even_low.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/train_system/medium_script/even_med.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data_process/log_wash.py" beforeDir="false" afterPath="$PROJECT_DIR$/data_process/log_wash.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/train_system/results/locust_requests.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/train_system/results/locust_requests_20240625203409.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/train_system/fine-grained.py" beforeDir="false" afterPath="$PROJECT_DIR$/train_system/fine-grained.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/train_system/medium.py" beforeDir="false" afterPath="$PROJECT_DIR$/train_system/medium.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -43,20 +47,24 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
-    &quot;last_opened_file_path&quot;: &quot;/Users/zhaoyiming/Documents/Thesis/Project/thesis_load_test_scripts&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "git-widget-placeholder": "main",
+    "last_opened_file_path": "/Users/zhaoyiming/Documents/Thesis/Project/thesis_load_test_scripts/train_system/medium_script",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/train_system/medium_script" />
+      <recent name="$PROJECT_DIR$/train_system/fine_script" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/data_process" />
     </key>
@@ -96,7 +104,7 @@
       <workItem from="1719339783375" duration="1206000" />
       <workItem from="1719341031597" duration="1967000" />
       <workItem from="1719386296116" duration="20786000" />
-      <workItem from="1719422732019" duration="38402000" />
+      <workItem from="1719422732019" duration="40684000" />
     </task>
     <task id="LOCAL-00001" summary="add the coarse script for the train system, add the log wash script">
       <option name="closed" value="true" />
@@ -146,7 +154,15 @@
       <option name="project" value="LOCAL" />
       <updated>1719342713579</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="the script for coarse grained system load testing">
+      <option name="closed" value="true" />
+      <created>1719575691660</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1719575691660</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -181,6 +197,7 @@
     <MESSAGE value="add medium" />
     <MESSAGE value="add fine" />
     <MESSAGE value="modify" />
-    <option name="LAST_COMMIT_MESSAGE" value="modify" />
+    <MESSAGE value="the script for coarse grained system load testing" />
+    <option name="LAST_COMMIT_MESSAGE" value="the script for coarse grained system load testing" />
   </component>
 </project>
